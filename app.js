@@ -180,3 +180,7 @@ scrapedNotes.forEach((snote) => {
 });
 
 loadNotes();
+
+window.addEventListener('beforeunload', () => {
+  save();
+});
